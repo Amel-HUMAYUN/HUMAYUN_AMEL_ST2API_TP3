@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -130,34 +130,49 @@ namespace HUMAYUN_AMEL_ST2API_TP3
                
 
                 day1.Text = string.Format("{0}", getDate(myDeserializedClass.list[8].dt).DayOfWeek);
-                double tempera1 = ConvertKC(myDeserializedClass.list[8].main.temp);
+                double tempera1 = ConvertKC(myDeserializedClass.list[2].main.temp_min);
                 double tempe1 = Convert.ToInt32(tempera1);
-                temp1.Text = tempe1.ToString() + " °C ";
+                T1m.Text = tempe1.ToString() + " °C ";
+                double tempera1max = ConvertKC(myDeserializedClass.list[8].main.temp_max);
+                double tempe1max = Convert.ToInt32(tempera1max);
+                t1max.Text = tempe1max.ToString() + " °C ";
                 pictureBox1.ImageLocation = "https://openweathermap.org/img/w/" + myDeserializedClass.list[8].weather[0].icon + ".png";
 
 
                 day2.Text = string.Format("{0}", getDate(myDeserializedClass.list[16].dt).DayOfWeek);
-                double tempera2 = ConvertKC(myDeserializedClass.list[16].main.temp);
-                double tempe2 = Convert.ToInt32(tempera2);
-                temp2.Text = tempe2.ToString() + " °C ";
+                double tempera2 = ConvertKC(myDeserializedClass.list[10].main.temp_min);
+                double tempe2 = Convert.ToInt32(tempera1);
+                min2.Text = tempe1.ToString() + " °C ";
+                double tempera2max = ConvertKC(myDeserializedClass.list[16].main.temp_max);
+                double tempe2max = Convert.ToInt32(tempera2max);
+                max2.Text = tempe1max.ToString() + " °C ";
                 pictureBox2.ImageLocation = "https://openweathermap.org/img/w/" + myDeserializedClass.list[16].weather[0].icon + ".png";
-
+                
                 day3.Text = string.Format("{0}", getDate(myDeserializedClass.list[24].dt).DayOfWeek);
-                double tempera3 = ConvertKC(myDeserializedClass.list[24].main.temp);
+                double tempera3 = ConvertKC(myDeserializedClass.list[18].main.temp_min);
                 double tempe3 = Convert.ToInt32(tempera3);
-                temp3.Text = tempe3.ToString() + " °C ";
+                min3.Text = tempe3.ToString() + " °C ";
+                double tempera3max = ConvertKC(myDeserializedClass.list[24].main.temp_max);
+                double tempe3max = Convert.ToInt32(tempera3max);
+                max3.Text = tempe3max.ToString() + " °C ";
                 pictureBox3.ImageLocation = "https://openweathermap.org/img/w/" + myDeserializedClass.list[24].weather[0].icon + ".png";
 
                 day4.Text = string.Format("{0}", getDate(myDeserializedClass.list[34].dt).DayOfWeek);
-                double tempera4 = ConvertKC(myDeserializedClass.list[34].main.temp);
-                double tempe4 = Convert.ToInt32(tempera4);
-                temp4.Text = tempe2.ToString() + " °C ";
+                double tempera4 = ConvertKC(myDeserializedClass.list[26].main.temp_min);
+                double tempe4 = Convert.ToInt32(tempera3);
+                min4.Text = tempe4.ToString() + " °C ";
+                double tempera4max = ConvertKC(myDeserializedClass.list[34].main.temp_max);
+                double tempe4max = Convert.ToInt32(tempera4max);
+                max4.Text = tempe4max.ToString() + " °C ";
                 pictureBox4.ImageLocation = "https://openweathermap.org/img/w/" + myDeserializedClass.list[34].weather[0].icon + ".png";
 
                 day5.Text = string.Format("{0}", getDate(myDeserializedClass.list[39].dt).DayOfWeek);
-                double tempera5 = ConvertKC(myDeserializedClass.list[39].main.temp);
+                double tempera5 = ConvertKC(myDeserializedClass.list[36].main.temp_min);
                 double tempe5 = Convert.ToInt32(tempera5);
-                temp5.Text = tempe5.ToString() + " °C ";
+                min5.Text = tempe5.ToString() + " °C ";
+                double tempera5max = ConvertKC(myDeserializedClass.list[34].main.temp_max);
+                double tempe5max = Convert.ToInt32(tempera5max);
+                max5.Text = tempe5max.ToString() + " °C ";
                 pictureBox5.ImageLocation = "https://openweathermap.org/img/w/" + myDeserializedClass.list[39].weather[0].icon + ".png";
             }
         }
@@ -189,6 +204,16 @@ namespace HUMAYUN_AMEL_ST2API_TP3
             double k = 3.6;
             double speedk = a * k;
             return speedk;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
