@@ -17,4 +17,6 @@ Clean code : Clean Code is not a set of strict rules but rather designates a ser
 
 Clean architecture : The Clean Architecture aims to reduce the dependencies of your business logic with the services you consume (API, Database, Framework, Third-party Libraries), to maintain a stable application during its evolutions, its tests but also during changes or updates from external resources.
 
-
+I would like to improve the code, especially by doing all the bonuses. For instance :
+- have an interaction application that will allow the user to select a country with a world map
+- Have the information in different languages
