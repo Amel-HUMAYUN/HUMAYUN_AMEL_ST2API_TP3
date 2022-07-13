@@ -20,3 +20,9 @@ Clean architecture : The Clean Architecture aims to reduce the dependencies of y
 I would like to improve the code, especially by doing all the bonuses. For instance :
 - have an interaction application that will allow the user to select a country with a world map
 - Have the information in different languages
+
+What should be improved in the previous lab:
+- it's good to make different classes for each method
+- Improve GUI
+- Perform unit tests
+- Collect data and make it more concrete
